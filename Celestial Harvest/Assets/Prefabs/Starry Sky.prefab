@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8556066844004628155}
   - component: {fileID: 7952208508746947224}
   m_Layer: 0
-  m_Name: Main Menu Background
+  m_Name: Starry Sky
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
