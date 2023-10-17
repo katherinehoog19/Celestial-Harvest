@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class MainMenuHandler : MonoBehaviour
 {
     public void PlayGame() {
-        SceneManager.LoadScene("Bedroom");
+        SceneManager.LoadScene("Crop Area");
     }
 
     public void QuitGame() {
