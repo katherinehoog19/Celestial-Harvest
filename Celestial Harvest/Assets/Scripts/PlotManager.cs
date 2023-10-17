@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlotManager : MonoBehaviour
 {
+    [SerializeField] Text day;
     bool isPlanted = false;
     SpriteRenderer plantSprite;
     int plantStage = 0;
@@ -16,6 +18,11 @@ public class PlotManager : MonoBehaviour
     }
 
     void Update(){
+        if (day.text != null){
+            string[] dayNumber = day.text.Split(' ');
+            Debug.Log(dayNumber[1]);
+        }
+
         if (isPlanted){
             timer -= Time.deltaTime;
 

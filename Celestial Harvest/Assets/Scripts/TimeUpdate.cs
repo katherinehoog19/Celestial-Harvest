@@ -14,7 +14,7 @@ public class TimeUpdate : MonoBehaviour
     void Start()
     {
         date = 1;
-        hours = 6;
+        hours = 0; //change back to 6 for startin day 
         time.text = hours.ToString() + ":00";
         StartCoroutine(TimeRoutine());
 
@@ -23,7 +23,7 @@ public class TimeUpdate : MonoBehaviour
     IEnumerator TimeRoutine(){
         while(true)
         {
-            yield return new WaitForSeconds(2); // this is the delay
+            yield return new WaitForSeconds(1); // this is the delay
             hours += 1;
             if (hours >= 24){
                 hours = 0;
