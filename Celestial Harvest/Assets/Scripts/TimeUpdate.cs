@@ -23,7 +23,7 @@ public class TimeUpdate : MonoBehaviour
     IEnumerator TimeRoutine(){
         while(true)
         {
-            yield return new WaitForSeconds(1); // this is the delay
+            yield return new WaitForSeconds(0.5f); // this is the delay
             hours += 1;
             if (hours >= 24){
                 hours = 0;

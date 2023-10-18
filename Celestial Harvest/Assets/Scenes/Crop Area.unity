@@ -155,9 +155,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1903054910}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 820.38, y: 438.09006}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -139.62, y: -101.90994}
   m_SizeDelta: {x: 279.24, y: 67.94}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &28549734
@@ -847,7 +847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d69e7eadb1804c6fa1b9208e5718181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
+  speed: 3
 --- !u!50 &627596382
 Rigidbody2D:
   serializedVersion: 4
@@ -1800,9 +1800,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1903054910}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 820.38, y: 506.03}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -139.62, y: -33.97}
   m_SizeDelta: {x: 279.24, y: 67.94}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1198898013
