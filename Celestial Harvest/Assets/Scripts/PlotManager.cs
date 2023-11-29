@@ -18,11 +18,6 @@ public class PlotManager : MonoBehaviour
     }
 
     void Update(){
-        // if (day.text != null){
-        //     string[] dayNumber = day.text.Split(' ');
-        //     Debug.Log(dayNumber[1]);
-        // }
-
         if (isPlanted){
             timer -= Time.deltaTime;
 
