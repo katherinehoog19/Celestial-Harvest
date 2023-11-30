@@ -11,10 +11,12 @@ public class PlotManager : MonoBehaviour
     int plantStage = 0;
     float timer;
 
-    public PlantObject selectedPlant;
+    PlantObject selectedPlant;
+    FarmManager fm;
 
     void Start(){
         plantSprite = GetComponent<SpriteRenderer>();
+        fm = transform.parent.GetComponent<FarmManager>();
     }
 
     void Update(){
@@ -37,8 +39,8 @@ public class PlotManager : MonoBehaviour
             }
         }
 
-        else{
-            Plant();
+        else if(fm.isPlanting && fm.selectPlant.plant.buyPrice <= fm.money){
+            Plant(fm.selectPlant.plant);
         }
     }
 
@@ -47,11 +49,15 @@ public class PlotManager : MonoBehaviour
         if (plantSprite){
             plantSprite.gameObject.SetActive(false);
             plantSprite.gameObject.SetActive(true);
+            fm.Transaction(selectedPlant.sellPrice);
         }
     }
 
-    void Plant(){
+    void Plant(PlantObject newPlant){
+        selectedPlant = newPlant;
         isPlanted = true;
+
+        fm.Transaction(-selectedPlant.buyPrice);
         plantStage = 0;
         UpdatePlant();
         timer = selectedPlant.timeBtwStages;

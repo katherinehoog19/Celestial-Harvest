@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 385f60df92e73400b9d5cfefc92dfa81, type: 3}
+  m_Name: Coffee
+  m_EditorClassIdentifier: 
+  plantName: Coffee
+  plantStages:
+  - {fileID: 1444830536, guid: f39717a9066b54a5ebfbb32c0589f06b, type: 3}
+  - {fileID: -1071927418, guid: f39717a9066b54a5ebfbb32c0589f06b, type: 3}
+  - {fileID: 986199534, guid: f39717a9066b54a5ebfbb32c0589f06b, type: 3}
+  - {fileID: 1501243859, guid: f39717a9066b54a5ebfbb32c0589f06b, type: 3}
+  timeBtwStages: 15
+  buyPrice: 30
+  sellPrice: 60
+  icon: {fileID: 21300000, guid: fc1a8dd7644bb460eae7ef93cf364eed, type: 3}

@@ -426,9 +426,9 @@ PrefabInstance:
       propertyPath: m_Text
       value: Coffee
       objectReference: {fileID: 0}
-    - target: {fileID: 2355378296002338331, guid: b34844ba85d3949d99f5d3bb0190e6e3, type: 3}
+    - target: {fileID: 2331788449882790769, guid: b34844ba85d3949d99f5d3bb0190e6e3, type: 3}
       propertyPath: m_FontData.m_Alignment
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2536145148486466213, guid: b34844ba85d3949d99f5d3bb0190e6e3, type: 3}
       propertyPath: m_Pivot.x
@@ -526,6 +526,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coffee Icon
       objectReference: {fileID: 0}
+    - target: {fileID: 7617067560688688633, guid: b34844ba85d3949d99f5d3bb0190e6e3, type: 3}
+      propertyPath: plant
+      value: 
+      objectReference: {fileID: 11400000, guid: 00c7f43a635d141dd9e1185116a0810d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -554,12 +558,8 @@ PrefabInstance:
       value: 'Cotton Plant Item '
       objectReference: {fileID: 0}
     - target: {fileID: 2331788449882790769, guid: b34844ba85d3949d99f5d3bb0190e6e3, type: 3}
-      propertyPath: m_Text
-      value: Cotton
-      objectReference: {fileID: 0}
-    - target: {fileID: 2355378296002338331, guid: b34844ba85d3949d99f5d3bb0190e6e3, type: 3}
       propertyPath: m_FontData.m_Alignment
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2536145148486466213, guid: b34844ba85d3949d99f5d3bb0190e6e3, type: 3}
       propertyPath: m_Pivot.x
@@ -653,10 +653,26 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 70ca05ca2ba014b959e7a8fb1b7e3130, type: 3}
+    - target: {fileID: 4956448380246907947, guid: b34844ba85d3949d99f5d3bb0190e6e3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956448380246907947, guid: b34844ba85d3949d99f5d3bb0190e6e3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4956448380246907947, guid: b34844ba85d3949d99f5d3bb0190e6e3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6691798343411623688, guid: b34844ba85d3949d99f5d3bb0190e6e3, type: 3}
       propertyPath: m_Name
       value: Cotton Icon
       objectReference: {fileID: 0}
+    - target: {fileID: 7617067560688688633, guid: b34844ba85d3949d99f5d3bb0190e6e3, type: 3}
+      propertyPath: plant
+      value: 
+      objectReference: {fileID: 11400000, guid: 4e27992b864c64ba1add79d936e16faa, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -951,11 +967,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2196289439186046412, guid: b34844ba85d3949d99f5d3bb0190e6e3, type: 3}
       propertyPath: m_Name
-      value: 'Chile Plant Item '
+      value: 'Chili Plant Item '
       objectReference: {fileID: 0}
     - target: {fileID: 2331788449882790769, guid: b34844ba85d3949d99f5d3bb0190e6e3, type: 3}
       propertyPath: m_Text
       value: Chile
+      objectReference: {fileID: 0}
+    - target: {fileID: 2331788449882790769, guid: b34844ba85d3949d99f5d3bb0190e6e3, type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2355378296002338331, guid: b34844ba85d3949d99f5d3bb0190e6e3, type: 3}
       propertyPath: m_FontData.m_Alignment
@@ -1057,6 +1077,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chile Icon
       objectReference: {fileID: 0}
+    - target: {fileID: 7617067560688688633, guid: b34844ba85d3949d99f5d3bb0190e6e3, type: 3}
+      propertyPath: plant
+      value: 
+      objectReference: {fileID: 11400000, guid: 67c6dbacd8d0b42ffaa440ffb4f54991, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1569,6 +1593,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 865839965}
+  - component: {fileID: 865839966}
   m_Layer: 0
   m_Name: Crop Plots
   m_TagString: Untagged
@@ -1602,6 +1627,22 @@ Transform:
   - {fileID: 1174158991}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &865839966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865839964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beccca40d87a2498f8695876a5033705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectPlant: {fileID: 0}
+  isPlanting: 0
+  money: 100
+  moneyText: {fileID: 1102981977}
 --- !u!1 &869815287
 GameObject:
   m_ObjectHideFlags: 0
@@ -3715,10 +3756,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corn Plant Item
       objectReference: {fileID: 0}
-    - target: {fileID: 2355378296002338331, guid: b34844ba85d3949d99f5d3bb0190e6e3, type: 3}
-      propertyPath: m_FontData.m_Alignment
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2536145148486466213, guid: b34844ba85d3949d99f5d3bb0190e6e3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3750,14 +3787,6 @@ PrefabInstance:
     - target: {fileID: 2536145148486466213, guid: b34844ba85d3949d99f5d3bb0190e6e3, type: 3}
       propertyPath: m_SizeDelta.y
       value: 156.94
-      objectReference: {fileID: 0}
-    - target: {fileID: 2536145148486466213, guid: b34844ba85d3949d99f5d3bb0190e6e3, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2536145148486466213, guid: b34844ba85d3949d99f5d3bb0190e6e3, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2536145148486466213, guid: b34844ba85d3949d99f5d3bb0190e6e3, type: 3}
       propertyPath: m_LocalPosition.x
