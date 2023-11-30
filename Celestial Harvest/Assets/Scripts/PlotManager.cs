@@ -55,14 +55,14 @@ public class PlotManager : MonoBehaviour
         isPlanted = false;
         if (plantSprite){ // if it's not equal to null?
 
-            if (selectedPlant.plantName != "Corn")
-        {
-            // If it's not "corn," transform the sprite's position
-            Vector3 newPosition = plantSprite.transform.position;
-            newPosition.x -= 0.5f;
-            newPosition.y -= 0.5f;
-            plantSprite.transform.position = newPosition;
-        }
+        //     if (selectedPlant.plantName != "Corn")
+        // {
+        //     // If it's not "corn," transform the sprite's position
+        //     Vector3 newPosition = plantSprite.transform.position;
+        //     newPosition.x -= 0.5f;
+        //     newPosition.y -= 0.5f;
+        //     plantSprite.transform.position = newPosition;
+        // }
 
             plantSprite.sprite = unwater; // what the fuck is this doing?
             //plantSprite.gameObject.SetActive(true);
@@ -83,6 +83,8 @@ public class PlotManager : MonoBehaviour
 
     void UpdatePlant (){
         plantSprite.sprite = selectedPlant.plantStages[plantStage];
+        Debug.Log(selectedPlant.plantName); //this is the plantObject name
+
     }
 
 }
