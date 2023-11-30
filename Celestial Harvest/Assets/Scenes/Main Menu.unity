@@ -271,6 +271,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: SFX Volume
       objectReference: {fileID: 0}
+    - target: {fileID: 7270300534753656102, guid: 1fcbe0a1dfb0641a1a3a6c69568a02ad, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: c3c3d360d9052495d9fee1373bee5403, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1032,7 +1036,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: c3c3d360d9052495d9fee1373bee5403, type: 3}
     m_FontSize: 100
     m_FontStyle: 0
     m_BestFit: 0
@@ -1754,8 +1758,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 45.2, y: 43.3}
-  m_SizeDelta: {x: 106.205, y: 94.15}
+  m_AnchoredPosition: {x: 45.875, y: 44.322}
+  m_SizeDelta: {x: 87.108, y: 75.787}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &776956549
 MonoBehaviour:
@@ -1909,13 +1913,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: c3c3d360d9052495d9fee1373bee5403, type: 3}
     m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 6
     m_MaxSize: 60
-    m_Alignment: 4
+    m_Alignment: 7
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -2359,7 +2363,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: c3c3d360d9052495d9fee1373bee5403, type: 3}
     m_FontSize: 100
     m_FontStyle: 0
     m_BestFit: 0
@@ -2656,6 +2660,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: Music Volume
       objectReference: {fileID: 0}
+    - target: {fileID: 7270300534753656102, guid: 1fcbe0a1dfb0641a1a3a6c69568a02ad, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: c3c3d360d9052495d9fee1373bee5403, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3963,6 +3971,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7270300534753656102, guid: 1fcbe0a1dfb0641a1a3a6c69568a02ad, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: c3c3d360d9052495d9fee1373bee5403, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

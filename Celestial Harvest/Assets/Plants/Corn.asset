@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plantName: 
   plantStages:
-  - {fileID: 40846445, guid: ec3dd6d05f74546cf9934b091c900e51, type: 3}
   - {fileID: -246176456, guid: ec3dd6d05f74546cf9934b091c900e51, type: 3}
   - {fileID: -125631038, guid: ec3dd6d05f74546cf9934b091c900e51, type: 3}
   - {fileID: -311970601, guid: ec3dd6d05f74546cf9934b091c900e51, type: 3}
