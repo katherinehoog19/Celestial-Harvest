@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class PlotManager : MonoBehaviour
 {
     [SerializeField] Text day;
+    [SerializeField] Sprite unwater;
     bool isPlanted = false; // check if something is planted
     SpriteRenderer plantSprite;
     int plantStage = 0; // 4 stages for each plant
@@ -39,7 +40,7 @@ public class PlotManager : MonoBehaviour
             }
         }*/
 
-        if(fm.isPlanting && (fm.selectPlant.plant.buyPrice <= fm.money)){ // if it's planted and there is something that has been selected and it's less than the money in the bank
+        if(fm.isPlanting && (fm.selectPlant.plant.buyPrice <= fm.money) && isPlanted == false){ // if it's planted and there is something that has been selected and it's less than the money in the bank
             Plant(fm.selectPlant.plant); // plant the plant on mouse click 
         }
         else if (isPlanted){
@@ -53,7 +54,17 @@ public class PlotManager : MonoBehaviour
     void Harvest(){
         isPlanted = false;
         if (plantSprite){ // if it's not equal to null?
-            plantSprite.gameObject.SetActive(false); // what the fuck is this doing?
+
+            if (selectedPlant.plantName != "Corn")
+        {
+            // If it's not "corn," transform the sprite's position
+            Vector3 newPosition = plantSprite.transform.position;
+            newPosition.x -= 0.5f;
+            newPosition.y -= 0.5f;
+            plantSprite.transform.position = newPosition;
+        }
+
+            plantSprite.sprite = unwater; // what the fuck is this doing?
             //plantSprite.gameObject.SetActive(true);
             fm.Transaction(selectedPlant.sellPrice); // auto sell on harvest 
         }

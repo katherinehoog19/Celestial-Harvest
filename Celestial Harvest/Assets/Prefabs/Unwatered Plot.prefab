@@ -144,7 +144,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c8d40d4ff7b74a848362c850c18c61f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedPlant: {fileID: 11400000, guid: 98cacf6904f7a4db5b59c02ea4434fdf, type: 2}
+  day: {fileID: 0}
+  unwater: {fileID: 68427477, guid: ec3dd6d05f74546cf9934b091c900e51, type: 3}
 --- !u!1 &3715513165243882769
 GameObject:
   m_ObjectHideFlags: 0
