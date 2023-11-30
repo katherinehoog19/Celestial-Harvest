@@ -7,6 +7,7 @@ public class PlotManager : MonoBehaviour
 {
     [SerializeField] Text day;
     [SerializeField] Sprite unwater;
+
     bool isPlanted = false; // check if something is planted
     SpriteRenderer plantSprite;
     int plantStage = 0; // 4 stages for each plant
@@ -54,19 +55,9 @@ public class PlotManager : MonoBehaviour
     void Harvest(){
         isPlanted = false;
         if (plantSprite){ // if it's not equal to null?
-
-        //     if (selectedPlant.plantName != "Corn")
-        // {
-        //     // If it's not "corn," transform the sprite's position
-        //     Vector3 newPosition = plantSprite.transform.position;
-        //     newPosition.x -= 0.5f;
-        //     newPosition.y -= 0.5f;
-        //     plantSprite.transform.position = newPosition;
-        // }
-
-            plantSprite.sprite = unwater; // what the fuck is this doing?
-            //plantSprite.gameObject.SetActive(true);
+            plantSprite.sprite = unwater; 
             fm.Transaction(selectedPlant.sellPrice); // auto sell on harvest 
+            GetComponent<AudioSource>().Play();
         }
     }
 

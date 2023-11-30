@@ -8,9 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 0
-    path: Assets/Scenes/Bedroom.unity
-    guid: 072b74df54d8249188a2c4dd76dccc79
   - enabled: 1
     path: Assets/Scenes/Crop Area.unity
     guid: 07b808230d0c749e887815a1f57484f8

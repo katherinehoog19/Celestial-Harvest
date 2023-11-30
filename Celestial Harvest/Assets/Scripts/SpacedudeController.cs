@@ -12,7 +12,15 @@ public class SpacedudeController : MonoBehaviour
     FarmManager fm;
     [SerializeField] Text taunt;
 
+    public static SpacedudeController singleton;
+
     void Awake(){
+        if (singleton == null){
+            singleton = this;
+        }
+        else {
+            Destroy(this.gameObject);
+        }
         fm = cp.GetComponent<FarmManager>(); 
         move = GetComponent<DiscreteMovement>();
     }
@@ -39,7 +47,7 @@ public class SpacedudeController : MonoBehaviour
                 SceneManager.LoadScene("End Screen");
             } 
             else {
-                taunt.text = "Not Enough Money! You need $" + (500 - fm.currentWallet()).ToString();
+                taunt.text = "Not Enough Money! Only $" + (500 - fm.currentWallet()).ToString() + " to go!";
             }
         }
         //move.Movement(vel);
