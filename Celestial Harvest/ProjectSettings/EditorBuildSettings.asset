@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Crop Area.unity
     guid: 07b808230d0c749e887815a1f57484f8
+  - enabled: 1
+    path: Assets/Scenes/Instructions.unity
+    guid: 4b7552bf9ef744869afaeb09dfe9dc3c
   m_configObjects: {}

@@ -6,9 +6,9 @@ using UnityEngine.UI;
 public class PlotManager : MonoBehaviour
 {
     [SerializeField] Text day;
-    bool isPlanted = false;
+    bool isPlanted = false; // check if something is planted
     SpriteRenderer plantSprite;
-    int plantStage = 0;
+    int plantStage = 0; // 4 stages for each plant
     float timer;
 
     PlantObject selectedPlant;
@@ -16,7 +16,7 @@ public class PlotManager : MonoBehaviour
 
     void Start(){
         plantSprite = GetComponent<SpriteRenderer>();
-        fm = transform.parent.GetComponent<FarmManager>();
+        fm = transform.parent.GetComponent<FarmManager>(); // what is this doing?
     }
 
     void Update(){
@@ -32,24 +32,30 @@ public class PlotManager : MonoBehaviour
     }
 
     void OnMouseDown(){
-        if (isPlanted){
+        /*if (isPlanted){
+
+            if (plantStage == selectedPlant.plantStages.Length - 1){ // if the plant stage is the last stage then you can harvest it
+                Harvest();
+            }
+        }*/
+
+        if(fm.isPlanting && (fm.selectPlant.plant.buyPrice <= fm.money)){ // if it's planted and there is something that has been selected and it's less than the money in the bank
+            Plant(fm.selectPlant.plant); // plant the plant on mouse click 
+        }
+        else if (isPlanted){
 
             if (plantStage == selectedPlant.plantStages.Length - 1){
                 Harvest();
             }
         }
-
-        else if(fm.isPlanting && fm.selectPlant.plant.buyPrice <= fm.money){
-            Plant(fm.selectPlant.plant);
-        }
     }
 
     void Harvest(){
         isPlanted = false;
-        if (plantSprite){
-            plantSprite.gameObject.SetActive(false);
-            plantSprite.gameObject.SetActive(true);
-            fm.Transaction(selectedPlant.sellPrice);
+        if (plantSprite){ // if it's not equal to null?
+            plantSprite.gameObject.SetActive(false); // what the fuck is this doing?
+            //plantSprite.gameObject.SetActive(true);
+            fm.Transaction(selectedPlant.sellPrice); // auto sell on harvest 
         }
     }
 
@@ -67,4 +73,5 @@ public class PlotManager : MonoBehaviour
     void UpdatePlant (){
         plantSprite.sprite = selectedPlant.plantStages[plantStage];
     }
+
 }

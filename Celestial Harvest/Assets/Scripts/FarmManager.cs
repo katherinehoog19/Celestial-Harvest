@@ -13,10 +13,10 @@ public class FarmManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        moneyText.text = "$" + money;
+        moneyText.text = "$" + money; // setting the money text 
     }
 
-    public void SelectPlant(PlantItem newPlant){
+    public void SelectPlant(PlantItem newPlant){ // this is on the shop button 
         if (selectPlant == newPlant){
             Debug.Log("deselected " + selectPlant.plant.plantName);
             selectPlant = null;
@@ -26,7 +26,7 @@ public class FarmManager : MonoBehaviour
         else {
             selectPlant = newPlant;
             Debug.Log("selected " + selectPlant.plant.plantName);
-            isPlanting = true;
+            isPlanting = true; // you're in planting mode mean you have something selected and are going to plant something
         }
     }
 
