@@ -42,7 +42,6 @@ public class SpacedudeController : MonoBehaviour
             vel.y = -1;
         }
         if (Input.GetKey(KeyCode.F)){
-            //Debug.Log(fm.currentWallet());
             if(fm.currentWallet() >= 500){
                 SceneManager.LoadScene("End Screen");
             } 
@@ -50,7 +49,6 @@ public class SpacedudeController : MonoBehaviour
                 taunt.text = "Not Enough Money! Only $" + (500 - fm.currentWallet()).ToString() + " to go!";
             }
         }
-        //move.Movement(vel);
         move.MoveRB(vel);
         
     }
